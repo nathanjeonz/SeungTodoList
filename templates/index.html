@@ -9,15 +9,31 @@
 </head>
 
 <body>
-    <h1 style="background-color: red;text-align: center;"><b>hello it is seungs todo list</h1>
-    <h2 style="background-color: aqua;">   Task</h2>
+    <h1 style="background-color: red;text-align: center;"><b> To Do List </b></h1>
+    <h2 style="background-color: aqua;">  <i>---------Task----------- </i> </h2>
 
    
 <ol>
     {% for t in seung_task %}
-   <li> {{ t }}<br> </li>
+    <li> 
+        {{ t }}
+    
+    <form action="/delete/{{ seung_task.index(t) }}" method="post" style="display:inline">
+        <button>delete</button>
+    </form>
     {% endfor %}
+    </li>
 </ol>
+
+
+<h3>Add Task</h3>
+<form action="/submit" method="post">
+    <input type="text" name="entertodo">
+    <button>submit</button>
+</form>
+
+
+
 </body>
 
 
