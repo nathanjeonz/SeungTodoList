@@ -22,16 +22,7 @@ def remove(index):
     tasks.pop(index)
     return flask.redirect('/')
 
-#     tasks.remove(ToDo)
-#     return f"you deleted task {ToDo}"
-
-@app.route('/seung')
-def hello():
-    return 'hello'
-
-@app.route('/umair')
-def bye():
-    return 'bye'
 
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
