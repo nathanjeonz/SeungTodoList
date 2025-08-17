@@ -4,6 +4,8 @@
 
 
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>To Do List</title>
     
 
 </head>
@@ -12,12 +14,11 @@
     <h1 style="background-color: red;text-align: center;"><b> To Do List </b></h1>
     <h2 style="background-color: aqua;">  <i>---------Task----------- </i> </h2>
 
-   
+
 <ol>
     {% for t in seung_task %}
     <li> 
-        {{ t }}
-    
+      <p id="todo_id">{{ t }}</p>
     <form action="/delete/{{ seung_task.index(t) }}" method="post" style="display:inline">
         <button>delete</button>
     </form>

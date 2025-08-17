@@ -1,0 +1,31 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    text-align: center;
+    
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+
+
+}
+button {
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+button:hover {
+    background-color: rgb(217, 170, 170);
+}   
+#todo_id {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 255, 42);
+    font-size: large;
+}
